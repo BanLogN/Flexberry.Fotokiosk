@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-fotokiosk-трудозатраты-e",
+  "editForm": "i-i-s-fotokiosk-трудозатраты-e",
+  "external": false,
+  "caption": "Трудозатраты",
+  "name": "IISFotokioskТрудозатратыL",
+  "className": "ТрудозатратыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk-трудозатраты",
+      "modelProjection": "ТрудозатратыL"
+    }
+  ]
+}

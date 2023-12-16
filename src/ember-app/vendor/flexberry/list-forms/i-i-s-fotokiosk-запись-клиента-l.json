@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-fotokiosk-запись-клиента-e",
+  "editForm": "i-i-s-fotokiosk-запись-клиента-e",
+  "external": false,
+  "caption": "Запись клиента",
+  "name": "IISFotokioskЗаписьКлиентаL",
+  "className": "ЗаписьКлиентаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk-запись-клиента",
+      "modelProjection": "ЗаписьКлиентаL"
+    }
+  ]
+}

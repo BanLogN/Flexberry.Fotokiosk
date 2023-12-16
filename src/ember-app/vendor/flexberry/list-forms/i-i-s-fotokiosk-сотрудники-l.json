@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-fotokiosk-сотрудники-e",
+  "editForm": "i-i-s-fotokiosk-сотрудники-e",
+  "external": false,
+  "caption": "Сотрудники",
+  "name": "IISFotokioskСотрудникиL",
+  "className": "СотрудникиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk-сотрудники",
+      "modelProjection": "СотрудникиL"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ПрайсЛист",
+      "projection": "ПрайсЛистL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Запись время",
+  "name": "IISFotokioskЗаписьВремяE",
+  "className": "ЗаписьВремяE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk-запись-время",
+      "modelProjection": "ЗаписьВремяE"
+    }
+  ]
+}

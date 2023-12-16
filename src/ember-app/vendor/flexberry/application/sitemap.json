@@ -1,0 +1,81 @@
+﻿{
+  "applicationCaption": "Fotokiosk",
+  "applicationTitle": "Fotokiosk",
+  "items": [
+    {
+      "link": null,
+      "menuName": "работа-с-клиентами",
+      "caption": "Работа с клиентами",
+      "title": "Работа с клиентами",
+      "children": [
+        {
+          "link": "i-i-s-fotokiosk-запись-время-l",
+          "menuName": null,
+          "caption": "Запись время",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-fotokiosk-прайс-лист-l",
+          "menuName": null,
+          "caption": "Прайс лист",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-fotokiosk-запись-клиента-l",
+          "menuName": null,
+          "caption": "Запись клиента",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "отчет-по-трудозатратам",
+      "caption": "Отчет по трудозатратам",
+      "title": "Отчет по трудозатратам",
+      "children": [
+        {
+          "link": "i-i-s-fotokiosk-трудозатраты-l",
+          "menuName": null,
+          "caption": "Трудозатраты",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "расходуемые-материалы",
+      "caption": "Расходуемые материалы",
+      "title": "Расходуемые материалы",
+      "children": [
+        {
+          "link": "i-i-s-fotokiosk-материал-l",
+          "menuName": null,
+          "caption": "Материал",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "сотрудники",
+      "caption": "Сотрудники",
+      "title": "Сотрудники",
+      "children": [
+        {
+          "link": "i-i-s-fotokiosk-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

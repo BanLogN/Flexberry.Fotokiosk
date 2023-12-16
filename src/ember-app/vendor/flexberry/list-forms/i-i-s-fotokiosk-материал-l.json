@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-fotokiosk-материал-e",
+  "editForm": "i-i-s-fotokiosk-материал-e",
+  "external": false,
+  "caption": "Материал",
+  "name": "IISFotokioskМатериалL",
+  "className": "МатериалL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk-материал",
+      "modelProjection": "МатериалL"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+﻿{
+  "name": "IISFotokioskРасходМатериад",
+  "modelName": "i-i-s-fotokiosk-расход-материад",
+  "className": "РасходМатериад",
+  "nameSpace": "IIS.Fotokiosk",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "материал",
+      "relatedTo": "i-i-s-fotokiosk-материал",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "трудозатраты",
+      "relatedTo": "i-i-s-fotokiosk-трудозатраты",
+      "inverse": "расходМатериад"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "РасходМатериадE",
+      "modelName": "i-i-s-fotokiosk-расход-материад",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Материал",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Материал",
+          "name": "материал",
+          "relatedTo": "i-i-s-fotokiosk-материал",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

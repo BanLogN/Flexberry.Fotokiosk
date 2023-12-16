@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISFotokioskСотрудники",
+  "modelName": "i-i-s-fotokiosk-сотрудники",
+  "className": "Сотрудники",
+  "nameSpace": "IIS.Fotokiosk",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "должность",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "фИОСотрудника",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СотрудникиE",
+      "modelName": "i-i-s-fotokiosk-сотрудники",
+      "attrs": [
+        {
+          "name": "фИОСотрудника",
+          "caption": "Ф и о сотрудника",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "должность",
+          "caption": "Должность",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СотрудникиL",
+      "modelName": "i-i-s-fotokiosk-сотрудники",
+      "attrs": [
+        {
+          "name": "фИОСотрудника",
+          "caption": "Ф и о сотрудника",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "должность",
+          "caption": "Должность",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

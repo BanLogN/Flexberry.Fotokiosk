@@ -1,0 +1,120 @@
+﻿{
+  "name": "IISFotokioskТрудозатраты",
+  "modelName": "i-i-s-fotokiosk-трудозатраты",
+  "className": "Трудозатраты",
+  "nameSpace": "IIS.Fotokiosk",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаОтчета",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-fotokiosk-сотрудники",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "расходМатериад",
+      "relatedTo": "i-i-s-fotokiosk-расход-материад",
+      "inverse": "трудозатраты"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ТрудозатратыE",
+      "modelName": "i-i-s-fotokiosk-трудозатраты",
+      "attrs": [
+        {
+          "name": "датаОтчета",
+          "caption": "Дата отчета",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИОСотрудника",
+          "lookupValueField": "фИОСотрудника",
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОСотрудника",
+              "caption": "Ф и о сотрудника",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Сотрудники",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-fotokiosk-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "РасходМатериадE",
+          "caption": "Расход материад",
+          "name": "расходМатериад",
+          "relatedTo": "i-i-s-fotokiosk-расход-материад",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ТрудозатратыL",
+      "modelName": "i-i-s-fotokiosk-трудозатраты",
+      "attrs": [
+        {
+          "name": "датаОтчета",
+          "caption": "Дата отчета",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОСотрудника",
+              "caption": "Ф и о сотрудника",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Ф и о сотрудника",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-fotokiosk-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

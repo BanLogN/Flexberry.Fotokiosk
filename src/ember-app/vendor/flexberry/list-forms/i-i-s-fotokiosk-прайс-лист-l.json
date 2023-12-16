@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-fotokiosk-прайс-лист-e",
+  "editForm": "i-i-s-fotokiosk-прайс-лист-e",
+  "external": false,
+  "caption": "Прайс лист",
+  "name": "IISFotokioskПрайсЛистL",
+  "className": "ПрайсЛистL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-fotokiosk-прайс-лист",
+      "modelProjection": "ПрайсЛистL"
+    }
+  ]
+}

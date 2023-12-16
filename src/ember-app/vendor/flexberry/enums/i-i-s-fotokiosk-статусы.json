@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Fotokiosk",
+  "className": "Статусы",
+  "enumObjects": {
+    "Свободно": "",
+    "Занято": ""
+  }
+}

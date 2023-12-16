@@ -1,0 +1,168 @@
+﻿{
+  "name": "IISFotokioskЗаписьКлиента",
+  "modelName": "i-i-s-fotokiosk-запись-клиента",
+  "className": "ЗаписьКлиента",
+  "nameSpace": "IIS.Fotokiosk",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаЗаписи",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "телефон",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "фамилияИмя",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-fotokiosk-сотрудники",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "услуга",
+      "relatedTo": "i-i-s-fotokiosk-услуга",
+      "inverse": "записьКлиента"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ЗаписьКлиентаE",
+      "modelName": "i-i-s-fotokiosk-запись-клиента",
+      "attrs": [
+        {
+          "name": "датаЗаписи",
+          "caption": "Дата записи",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "фамилияИмя",
+          "caption": "Фамилия имя",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "телефон",
+          "caption": "Телефон",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИОСотрудника",
+          "lookupValueField": "фИОСотрудника",
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОСотрудника",
+              "caption": "Ф и о сотрудника",
+              "hidden": true,
+              "index": 4
+            },
+            {
+              "name": "должность",
+              "caption": "Должность",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Сотрудники",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-fotokiosk-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "УслугаE",
+          "caption": "Услуга",
+          "name": "услуга",
+          "relatedTo": "i-i-s-fotokiosk-услуга",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ЗаписьКлиентаL",
+      "modelName": "i-i-s-fotokiosk-запись-клиента",
+      "attrs": [
+        {
+          "name": "датаЗаписи",
+          "caption": "Дата записи",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "фамилияИмя",
+          "caption": "Фамилия имя",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "телефон",
+          "caption": "Телефон",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОСотрудника",
+              "caption": "Ф и о сотрудника",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Ф и о сотрудника",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-fotokiosk-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
